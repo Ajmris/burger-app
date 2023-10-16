@@ -1,9 +1,13 @@
 <div class="container">
     <p>burger works!</p>
-    Witamy na kursia {{title}}<br>
-    Liczba pi to: {{pi}} <br>
-    Dzisiaj jest: {{date}}<br>
-    Mój pies to: {{dog.name}}<br>
-    Ma {{dog.age}} lat
-    {{showDog()}}
+    Witamy na kursia {{title | uppercase}}<br>
+    Liczba pi to: {{pi | number: '1.1-2'}} <br>
+    Dzisiaj jest: {{date | date: 'dd-MM-yy'}}<br>
+    Mój pies to: {{dog && dog.name}}<br>
+    <!--Ma {{dog.age}} lat<br>
+    {{showDog()}}<br>-->
+    <br>
+    Działania na liczbach:<br>
+    {{2+2*2}}
+    {{56-24/6*3}}
 </div>

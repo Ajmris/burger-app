@@ -9,13 +9,12 @@ export class BurgerComponent {
   title='Angulara';
   pi=Math.PI;
   date=new Date();
-  dog=new Dog('Perła', 12);
+  dog=Dog;/*new Dog('Perła', 12);
   showDog(){
     return "Mój piesio to "+this.dog.name+" i ma "+this.dog.age+" lata.";
-  }
+  }*/
 }
 class Dog{
   constructor(public name: string, public age: number){
-
   }
 }
