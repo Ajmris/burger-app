@@ -1,0 +1,11 @@
+body{
+    background-color: black;
+    color: rgb(255, 140, 0);
+}
+h1, h2{
+    text-align: center;
+    color: rgb(218, 204, 204);
+}
+th, td{
+    border: 1px solid rgb(173, 32, 32);
+}

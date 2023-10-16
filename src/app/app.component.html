@@ -1,0 +1,33 @@
+<body>
+  <div class="jumbotron">
+    <h1>{{title1}}</h1>
+    <h1>{{title2}}</h1>
+    <h1>{{title3}}</h1>
+  </div>
+  <div class="jumbotron">
+    <app-burger></app-burger>
+    <app-vegeburger></app-vegeburger>
+    <table>
+      <th>Lp.</th>
+      <th>Użytkownik</th>
+      <th>Pażyste</th>
+      <th>Niepażyste</th>
+      <th>Pierwszy</th>
+      <th>Ostatni</th>
+      <tr *ngFor="let user of usersList
+                  let i=index
+                  let e=even
+                  let o=odd
+                  let f=first
+                  let l=last"
+                  (mouseover) =myFunction($event)>
+        <td>{{i}}</td>
+        <td>{{user}}</td>
+        <td>{{e}}</td>
+        <td>{{o}}</td>
+        <td>{{f}}</td>
+        <td>{{l}}</td>
+      </tr>
+    </table>
+  </div>
+</body>
