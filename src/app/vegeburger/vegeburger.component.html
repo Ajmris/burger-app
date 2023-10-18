@@ -1,10 +1,16 @@
 <p>vegeburger works!</p>
+<h3>Angular kurs - property binding</h3>
+<ng-container *ngIf="isVisible">
+    <div *ngFor="let day of days">
+        <div>{{day}}</div>
+    </div>
+</ng-container>
+<button (click)="show()">NgIf</button>
+<br>
 <p>Dni tygodnia</p>
-<ul>
-    <li *ngFor="let day of days">
-        {{day}}
-    </li>
-</ul>
-<div *ngFor="let dog of dogs">
-    {{dog.name}} {{dog.age}}
+<div [hidden]="isHidden">
+    <div *ngFor="let day of days">
+        <div>{{day}}</div>
+    </div>
 </div>
+<button (click)="hidden()">Hidden</button>

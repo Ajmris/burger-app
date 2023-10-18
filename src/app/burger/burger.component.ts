@@ -6,15 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./burger.component.css']
 })
 export class BurgerComponent {
-  title='Angulara';
-  pi=Math.PI;
-  date=new Date();
-  dog=Dog;/*new Dog('Perła', 12);
-  showDog(){
-    return "Mój piesio to "+this.dog.name+" i ma "+this.dog.age+" lata.";
-  }*/
-}
-class Dog{
-  constructor(public name: string, public age: number){
+  inputText: string = 'Pole tekstowe';
+  inputText2Way: string = ''; // Inicjalizacja inputText2Way jako pustego ciągu znaków
+  button: boolean = true;
+  showClick: string = '';
+
+  click(event: MouseEvent): void {
+    this.showClick = 'Przycisk aktywny!';
+    this.button = false;
   }
 }

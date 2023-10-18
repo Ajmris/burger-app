@@ -5,7 +5,7 @@
     <h1>{{title3}}</h1>
   </div>
   <div class="jumbotron">
-    <app-burger></app-burger>
+    <app-burger *ngFor="let i of [1, 2, 2, 4]"></app-burger>
     <app-vegeburger></app-vegeburger>
     <table>
       <th>Lp.</th>

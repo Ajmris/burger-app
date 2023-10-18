@@ -1,13 +1,13 @@
-<div class="container">
-    <p>burger works!</p>
-    Witamy na kursia {{title | uppercase}}<br>
-    Liczba pi to: {{pi | number: '1.1-2'}} <br>
-    Dzisiaj jest: {{date | date: 'dd-MM-yy'}}<br>
-    Mój pies to: {{dog && dog.name}}<br>
-    <!--Ma {{dog.age}} lat<br>
-    {{showDog()}}<br>-->
-    <br>
-    Działania na liczbach:<br>
-    {{2+2*2}}
-    {{56-24/6*3}}
+<h3>Property kurs - property binding</h3>
+<div>
+    <input [value]="inputText">
+</div>
+<div>
+    <input [(ngModel)]="inputText2Way">
+    {{inputText2Way}}
+</div>
+<div>
+    <input (click)="click($event)">
+    <button [disabled]="button">Dodaj</button>
+    {{showClick}}
 </div>
