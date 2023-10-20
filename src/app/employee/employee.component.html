@@ -1,0 +1,7 @@
+<p>employee works!</p>
+<p>Ten pracownik to {{profession}}, a jego umiejetności to {{skill}}</p>
+<label for="male">Zawód</label>
+<input [value]="profession" (input)="inputProfession($event)">
+<br>
+<label for="male">Umiejętności</label>
+<input [value]="skill" (input)="inputSkill($event)">

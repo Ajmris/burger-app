@@ -1,0 +1,6 @@
+<h3 [className]="colorClass">eventbinding works!</h3>
+<input [disabled]="isDisable" (focus)="onFocus()"><br>
+<input [disabled]="isDisable" (click)="onClick($event)"><br>
+<input [disabled]="isDisable" (mousemove)="onMouseMove($event)"><br>
+<input [disabled]="isDisable" (paste)="onPaste()">{{inputText}}<br>
+<button (click)="change()">Zmiana</button>
