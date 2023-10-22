@@ -7,6 +7,7 @@ import { VegeburgerComponent } from './vegeburger/vegeburger.component';
 import { BindingComponent } from './binding/binding.component';
 import { EventbindingComponent } from './eventbinding/eventbinding.component';
 import { EmployeeComponent } from './employee/employee.component';
+import { InputComponent } from './input/input.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { EmployeeComponent } from './employee/employee.component';
     VegeburgerComponent,
     BindingComponent,
     EventbindingComponent,
-    EmployeeComponent
+    EmployeeComponent,
+    InputComponent
   ],
   imports: [
     BrowserModule,

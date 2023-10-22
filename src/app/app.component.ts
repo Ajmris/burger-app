@@ -11,6 +11,9 @@ export class AppComponent {
   title3 = 'Dyrektywa ngFor';
   usersList = ['Dorota', 'Błażej', 'Sebastian', 'Marta', 'Piotr', 'Grzegorz', 'Daniel'];
 
+  
+  taskList=['Sprzątanie kuwety', 'Gotowanie', 'Nauka angulara'];
+
   myFunction(event: Event){
     console.log(event);
   }
