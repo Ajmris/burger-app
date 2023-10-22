@@ -6,7 +6,7 @@
   </div>
   <div class="jumbotron">
     <!--<app-burger *ngFor="let i of [1, 2, 2, 4]"></app-burger>-->
-    <app-input [taskProp]="taskList"></app-input>
+    <app-input [taskProp]="taskList" (eventTask)="selected($event)"></app-input>
     <!--<app-vegeburger></app-vegeburger>
     <app-binding></app-binding>
     <app-employee></app-employee>
